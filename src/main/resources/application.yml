@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    hikari:
+      maximum-pool-size: 4
+    url: jdbc:postgresql://localhost:25000/board_road
+    username: developer
+    password: devpassword
