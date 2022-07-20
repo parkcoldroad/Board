@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 @Entity
 @Builder
 @NoArgsConstructor
-@AllArgsConstructor
+@AllArgsConstructor //모든 변수, 파라매터 초기화
 public class Post {
 
     @Id
