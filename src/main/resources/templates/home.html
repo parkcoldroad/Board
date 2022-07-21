@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Create Time</th>
+        <th>Update Time</th>
+    </tr>
+    </thead>
+<tbody>
+<tr th:each="post : ${posts}">
+    <td th:text=" ${post.id}"></td>
+    <td th:text=" ${post.title}"></td>
+    <td th:text=" ${post.content}"></td>
+    <td th:text=" ${post.creationTime}"></td>
+    <td th:text=" ${post.updatedTime}"></td>
+</tr>
+</tbody>
+
+</table>
+</body>
+</html>

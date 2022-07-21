@@ -7,6 +7,7 @@ import dto.PostDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service // spring 컨테이너가 관리하는 bean 객체라고 선언
@@ -49,6 +50,11 @@ public class PostServiceImpl implements PostService {
                     postRepository.save(post);
                 }
         );
+    }
+
+    @Override
+    public List<Post> getAllPost() {
+        return postRepository.findAll();
     }
 
 }
